@@ -1,6 +1,6 @@
 FROM ubuntu:18.04
 RUN apt-get update && \
-	apt-get install -qy git curl python locales && \
+	apt-get install -qy git curl python lsb-release locales && \
 	apt-get clean && \
 	rm -rf /var/lib/apt/lists/*
 RUN locale-gen en_US.UTF-8
